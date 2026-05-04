@@ -16,7 +16,7 @@ async function bootstrap() {
     .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'JWT')
     .addTag('Cursos')
     .addServer("http://localhost:3000", "Servidor local")
-    .addServer("https://practica-iii-oidr.onrender.com", "Servidor de produccion")
+    .addServer("https://examen-02-n0u2.onrender.com", "Servidor de produccion")
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, documentFactory);
